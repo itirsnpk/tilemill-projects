@@ -1,0 +1,89 @@
+{
+  "bounds": [
+    -131.8359,
+    20.6328,
+    -58.7109,
+    52.9089
+  ],
+  "center": [
+    -97.3828,
+    38.8226,
+    1
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "try2",
+    "template_teaser": "{{{name}}}, {{{gender}}} <br>\n{{{cd}}} \n\n",
+    "fields": [
+      "cd",
+      "name",
+      "gender"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape",
+        "id": "countries",
+        "project": "judiciary_committee",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
+      "id": "10madmin1statesprovi",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.3.0/cultural/10m-admin-1-states-provinces-lines-shp.zip",
+        "id": "10madmin1statesprovi",
+        "project": "judiciary_committee",
+        "srs": null
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "10madmin1statesprovi"
+    },
+    {
+      "geometry": "polygon",
+      "id": "try2",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/Itir/Documents/Lorelei/try2.shp",
+        "id": "try2",
+        "project": "judiciary_committee",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "try2"
+    },
+    {
+      "geometry": "point",
+      "id": "atlanticarticlegunma",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/Itir/Desktop/Atlantic_Article_Gun_Massacres.csv"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "atlanticarticlegunma"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Gender",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}

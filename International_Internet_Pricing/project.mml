@@ -1,0 +1,54 @@
+{
+  "bounds": [
+    -180,
+    -85.0511,
+    180,
+    85.0511
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "pubkey0akdbhqcyd6ged",
+    "template_teaser": "<h2>{{{City}}}, {{{Country}}}</h2>\nDownload Speed: {{{Download_Speed}}} Mbps"
+  },
+  "minzoom": 0,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "point",
+      "id": "pubkey0akdbhqcyd6ged",
+      "class": "",
+      "Datasource": {
+        "file": "https://docs.google.com/spreadsheet/pub?key=0AkDBHQCYd6GedGdyN1B6cy1RNFN3OVpUT0tnMktqMXc&single=true&gid=2&output=csv",
+        "id": "pubkey0akdbhqcyd6ged",
+        "project": "International_Internet_Pricing",
+        "srs": null
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "pubkey0akdbhqcyd6ged"
+    }
+  ],
+  "name": "International Internet Pricing",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}
